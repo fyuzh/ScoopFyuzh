@@ -24,7 +24,7 @@
     ],
     "pre_uninstall": [
         "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
-        "$processdir = appdir $app $global | Convert-Path; error \"$processdir\"; Get-Process | Where-Object { $_.Path -like \"$processdir\\*\" } | Stop-Process -Force; ",
+        "$processdir = appdir $app $global | Convert-Path; Get-Process | Where-Object { $_.Path -like \"$processdir\\*\" } | Stop-Process -Force; ",
         "Start-Process \"$dir\\resources\\uninstall-service.exe\" -Wait -Verb 'RunAs' -WindowStyle 'Hidden'; Start-Sleep -Seconds 3"
     ],
     "checkver": "github",
