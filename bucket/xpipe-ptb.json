@@ -7,7 +7,7 @@
         "64bit": {
             "url": "https://github.com/xpipe-io/xpipe-ptb/releases/download/9.0-9/xpipe-portable-windows-x86_64.zip",
             "hash": "ea6ba8e40a9d7e2056c82cc10c32dbf86a876450e128830755bfbbede38301bd",
-            "extract_dir": "xpipe-ptb-9.0-9"
+            "extract_dir": "xpipe-9.0-9"
         }
     },
     "bin": "cli\\bin\\xpipe.exe",
@@ -24,7 +24,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/xpipe-io/xpipe-ptb/releases/download/$version/xpipe-portable-windows-x86_64.zip",
-                "extract_dir": "xpipe-ptb-$version"
+                "extract_dir": "xpipe-$version"
             }
         },
         "hash": {
